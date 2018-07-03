@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title th:text="#{index.page.title}">Page Title</title>
+
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" media="screen"
+          th:href="@{/webjars/bootstrap/4.1.1/css/bootstrap.min.css}"/>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.js"
+            th:src="@{/webjars/jquery/3.3.1-1/jquery.min.js}"></script>
+
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"
+            th:src="@{/webjars/bootstrap/4.1.1/js/bootstrap.min.js}"></script>
+
+    <link th:href="@{/css/custom.css}" rel="stylesheet" media="screen"/>
+</head>
+<body>
+<div class="navbar" th:replace="fragments/navigation :: navigation"></div>
+<p>why wont you work???</p>
+<span th:text="${appName}">The App</span>
+
+</body>
+</html>
