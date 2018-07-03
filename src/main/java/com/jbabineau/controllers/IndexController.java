@@ -11,7 +11,6 @@ public class IndexController {
     @RequestMapping("/")
     public String getIndex(Model model){
 
-        model.addAttribute("appName", "TWSS board!");
         model.addAttribute("classActiveHome", "active");
         model.addAttribute("header1", "index.header1");
         model.addAttribute("header2", "index.header2");
